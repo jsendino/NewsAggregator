@@ -24,5 +24,6 @@ wo main datasets has been selected to use in this study:
 * 20newsgroup. This dataset, taken from the UCI repository, is build from around 20000 articles of 20 different classes. It is conveniently built into scikit-learn so different subsets can be chosen from it (e.g, choosing only specific classes from the whole set of categories). In this case, the whole dataset will be used. More information on this dataset can be found in [2].
 
 [1]: D.GreeneandP.Cunningham,“Practical solutions to the problem of diagonal dominance in kernel document clustering,” in *Proceedings of the 23rd international conference on Machine learning*, pp. 377– 384, ACM, 2006.
+
 [2]: T. Mitchell, “UCI machine learning repository,” 2013.
 
