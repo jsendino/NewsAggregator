@@ -41,17 +41,15 @@ According to this, the program will then expect three different type of flags as
 * **-t**. Boolean flag indicating whether the multithreading mode is enabled.
 
 For example with dataset BBC, Naive Bayes and multithreading:
-
         ``` python main.py --bbc --nb -t```
         
 If we want to use the dataset 20news with MaxEnt and without multithreading:
-
         ``` python main.py --20n --maxent```
         
 In any case, the flag -h can be used to obtain some help and information about the project and how to execute it.
 
 ## References
-[1]: D.GreeneandP.Cunningham,“Practical solutions to the problem of diagonal dominance in kernel document clustering,” in *Proceedings of the 23rd international conference on Machine learning*, pp. 377– 384, ACM, 2006.
+[1]: D.Greene and P.Cunningham,“Practical solutions to the problem of diagonal dominance in kernel document clustering,” in *Proceedings of the 23rd international conference on Machine learning*, pp. 377– 384, ACM, 2006.
 
 [2]: T. Mitchell, “UCI machine learning repository,” 2013.
 
