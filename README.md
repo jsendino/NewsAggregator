@@ -40,8 +40,10 @@ According to this, the program will then expect three different type of flags as
 * **-t**. Boolean flag indicating whether the multithreading mode is enabled.
 For example with dataset BBC, Naive Bayes and multithreading:
         ``` python main.py --bbc --nb -t```
+        
 If we want to use the dataset 20news with MaxEnt and without multithreading:
         ``` python main.py --20n --maxent```
+        
 In any case, the flag -h can be used to obtain some help and information about the project and how to execute it.
 
 ## References
