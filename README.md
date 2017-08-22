@@ -23,6 +23,28 @@ wo main datasets has been selected to use in this study:
 
 * 20newsgroup. This dataset, taken from the UCI repository, is build from around 20000 articles of 20 different classes. It is conveniently built into scikit-learn so different subsets can be chosen from it (e.g, choosing only specific classes from the whole set of categories). In this case, the whole dataset will be used. More information on this dataset can be found in [2].
 
+## Readme
+# Structure
+The project consists of 5 files:
+* **report.pdf**. A PDF report explaining and showing the results and answering the required questions.
+* **main.py**. Main script parsing the CLI arguments, loading the datasets and using the perceptron.
+* **classifier.py**. Python file containing the Classifier class, which implements the methods needed to train and test the model.
+* **features.py**. File with the indicator functions used as features.
+* **utils.py**. File containing useful functions.
+Apart from these files, a folder with the BBC dataset is included. Inside this folder we find as many subdirectories as classes. In each subdirectory, each sample is contained in one txt file. Please note that the program will try to load the dataset 20newsgroup from the library scikit-learn. In case it is not previously downloaded, it will attempt to do it.
+
+# Execution guide
+Each run of the program will execute the desired algorithm on a specific algorithm using the three different representations (bag of words, features and bigrams) and print the results. That will imply to train and test 3 different models 10 times, one for each fold, and will take a great amount of time to complete the whole task. To avoid this, a multithread mode has been enable. This mode will train and test for each fold the three models in parallel.
+According to this, the program will then expect three different type of flags as arguments: • –bbc/–20n. Dataset to use (choose one between them).
+* **–nb/–maxent**. Algorithm to use (choose one between them).
+* **-t**. Boolean flag indicating whether the multithreading mode is enabled.
+For example with dataset BBC, Naive Bayes and multithreading:
+        ``` python main.py --bbc --nb -t```
+If we want to use the dataset 20news with MaxEnt and without multithreading:
+        ``` python main.py --20n --maxent```
+In any case, the flag -h can be used to obtain some help and information about the project and how to execute it.
+
+## References
 [1]: D.GreeneandP.Cunningham,“Practical solutions to the problem of diagonal dominance in kernel document clustering,” in *Proceedings of the 23rd international conference on Machine learning*, pp. 377– 384, ACM, 2006.
 
 [2]: T. Mitchell, “UCI machine learning repository,” 2013.
