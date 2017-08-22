@@ -35,13 +35,17 @@ Apart from these files, a folder with the BBC dataset is included. Inside this f
 
 # Execution guide
 Each run of the program will execute the desired algorithm on a specific algorithm using the three different representations (bag of words, features and bigrams) and print the results. That will imply to train and test 3 different models 10 times, one for each fold, and will take a great amount of time to complete the whole task. To avoid this, a multithread mode has been enable. This mode will train and test for each fold the three models in parallel.
-According to this, the program will then expect three different type of flags as arguments: • –bbc/–20n. Dataset to use (choose one between them).
+According to this, the program will then expect three different type of flags as arguments: 
+* **–bbc/–20n**. Dataset to use (choose one between them).
 * **–nb/–maxent**. Algorithm to use (choose one between them).
 * **-t**. Boolean flag indicating whether the multithreading mode is enabled.
+
 For example with dataset BBC, Naive Bayes and multithreading:
+
         ``` python main.py --bbc --nb -t```
         
 If we want to use the dataset 20news with MaxEnt and without multithreading:
+
         ``` python main.py --20n --maxent```
         
 In any case, the flag -h can be used to obtain some help and information about the project and how to execute it.
